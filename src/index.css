@@ -2,39 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* EcoFinds Sustainable Design System
+All colors are earth-inspired and HSL-based for consistency.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 15% 98%;
+    --foreground: 158 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 158 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 158 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 158 45% 25%;
+    --primary-foreground: 45 15% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 25% 90%;
+    --secondary-foreground: 158 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 15% 95%;
+    --muted-foreground: 158 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 35% 85%;
+    --accent-foreground: 158 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 15% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 158 45% 25%;
+
+    /* EcoFinds custom colors */
+    --eco-primary: 158 45% 25%;
+    --eco-primary-light: 158 35% 35%;
+    --eco-secondary: 25 35% 70%;
+    --eco-accent: 45 55% 75%;
+    --eco-success: 120 40% 40%;
+    --eco-warning: 40 85% 55%;
+
+    /* Gradients */
+    --gradient-eco: linear-gradient(135deg, hsl(var(--eco-primary)), hsl(var(--eco-primary-light)));
+    --gradient-earth: linear-gradient(135deg, hsl(var(--eco-secondary)), hsl(var(--eco-accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 12px hsl(var(--eco-primary) / 0.1);
+    --shadow-card: 0 6px 24px hsl(var(--eco-primary) / 0.08);
+    --shadow-hover: 0 8px 32px hsl(var(--eco-primary) / 0.15);
 
     --radius: 0.5rem;
 
